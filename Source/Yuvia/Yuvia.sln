@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{C09F42D1-CE8E-4513-90E2-E947AB2F9B3B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{1D5D83FF-BE0B-4C06-A814-0FA24E1F3287}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{F8EE8B1D-CB2F-4F45-86BD-F0EC0FCBE9EC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{86EDCED2-9C01-48A3-A63B-85F91DA30BB2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{8168BD92-D805-4DC0-9F46-558BFB198AE1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yuvia.Web", "Presentation\Yuvia.Web\Yuvia.Web.csproj", "{53C41FF8-237B-4877-BD4E-0D5B33B54EAD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{53C41FF8-237B-4877-BD4E-0D5B33B54EAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53C41FF8-237B-4877-BD4E-0D5B33B54EAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53C41FF8-237B-4877-BD4E-0D5B33B54EAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53C41FF8-237B-4877-BD4E-0D5B33B54EAD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{53C41FF8-237B-4877-BD4E-0D5B33B54EAD} = {86EDCED2-9C01-48A3-A63B-85F91DA30BB2}
+	EndGlobalSection
+EndGlobal
