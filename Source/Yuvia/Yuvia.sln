@@ -15,6 +15,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{8168BD92-D
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yuvia.Web", "Presentation\Yuvia.Web\Yuvia.Web.csproj", "{53C41FF8-237B-4877-BD4E-0D5B33B54EAD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yuvia.Core", "Domain\Yuvia.Core\Yuvia.Core.csproj", "{93A6188C-94DE-4BEC-B928-226275050D37}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yuvia.Services", "Domain\Yuvia.Services\Yuvia.Services.csproj", "{72E496BF-703F-4867-B1B1-53BE6A069F49}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yuvia.Domain.Tests", "Yuvia.Domain.Tests\Yuvia.Domain.Tests.csproj", "{6B291CFF-0285-41C0-91E6-9B255BDE6841}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,11 +31,26 @@ Global
 		{53C41FF8-237B-4877-BD4E-0D5B33B54EAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{53C41FF8-237B-4877-BD4E-0D5B33B54EAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{53C41FF8-237B-4877-BD4E-0D5B33B54EAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93A6188C-94DE-4BEC-B928-226275050D37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93A6188C-94DE-4BEC-B928-226275050D37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93A6188C-94DE-4BEC-B928-226275050D37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93A6188C-94DE-4BEC-B928-226275050D37}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72E496BF-703F-4867-B1B1-53BE6A069F49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72E496BF-703F-4867-B1B1-53BE6A069F49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72E496BF-703F-4867-B1B1-53BE6A069F49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72E496BF-703F-4867-B1B1-53BE6A069F49}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B291CFF-0285-41C0-91E6-9B255BDE6841}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B291CFF-0285-41C0-91E6-9B255BDE6841}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B291CFF-0285-41C0-91E6-9B255BDE6841}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B291CFF-0285-41C0-91E6-9B255BDE6841}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{53C41FF8-237B-4877-BD4E-0D5B33B54EAD} = {86EDCED2-9C01-48A3-A63B-85F91DA30BB2}
+		{93A6188C-94DE-4BEC-B928-226275050D37} = {C09F42D1-CE8E-4513-90E2-E947AB2F9B3B}
+		{72E496BF-703F-4867-B1B1-53BE6A069F49} = {C09F42D1-CE8E-4513-90E2-E947AB2F9B3B}
+		{6B291CFF-0285-41C0-91E6-9B255BDE6841} = {8168BD92-D805-4DC0-9F46-558BFB198AE1}
 	EndGlobalSection
 EndGlobal
