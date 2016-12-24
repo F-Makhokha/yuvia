@@ -13,7 +13,7 @@ namespace Yuvia.Services.Account
         private readonly IRepository<UserAccount> _userAccountRepository;
         private readonly IEmailPublisher _emailPublisher;
 
-        public UserAccountService( IRepository<UserAccount> userAccountRepositroy,
+        public UserAccountService( IRepository<UserAccount> userAccountRepository,
             IEmailPublisher emailPublisher )
         {
             _userAccountRepository = userAccountRepositroy;
