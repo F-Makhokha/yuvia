@@ -9,7 +9,7 @@ namespace Yuvia.Core
     public interface IRepository<T>
     {
         void Insert( T entity );
-        void Get( object id );
+        T Get( object id );
         void Update( T entity );
     }
 }

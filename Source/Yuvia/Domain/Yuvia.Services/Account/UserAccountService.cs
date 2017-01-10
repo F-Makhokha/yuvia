@@ -16,7 +16,7 @@ namespace Yuvia.Services.Account
         public UserAccountService( IRepository<UserAccount> userAccountRepository,
             IEmailPublisher emailPublisher )
         {
-            _userAccountRepository = userAccountRepositroy;
+            _userAccountRepository = userAccountRepository;
             _emailPublisher = emailPublisher;
         }
 
@@ -25,8 +25,11 @@ namespace Yuvia.Services.Account
             if( userAccount == null )
                 return;
 
-            _userAccountRepository.Insert( userAccount );
-            _emailPublisher.Send( new Email() );
+            if( _userAccountRepository.Get( userAccount.AccountId ) == null )
+            {
+                _userAccountRepository.Insert( userAccount );
+                _emailPublisher.Send( new Email() );
+            }
         }
     }
 }
