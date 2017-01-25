@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Yuvia.Core
+namespace Yuvia.Core.Email
 {
     public interface IEmailPublisher
     {

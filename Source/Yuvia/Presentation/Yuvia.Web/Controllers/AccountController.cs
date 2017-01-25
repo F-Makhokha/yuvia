@@ -3,7 +3,11 @@ using System.ComponentModel.DataAnnotations;
 using System.Web.Mvc;
 using Yuvia.Core;
 using Yuvia.Core.Account;
+using Yuvia.Core.Data;
+using Yuvia.Core.Email;
+using Yuvia.Data.SqlServer.Repositories;
 using Yuvia.Services.Account;
+using Yuvia.Web.Models;
 
 namespace Yuvia.Web.Controllers
 {
@@ -11,9 +15,16 @@ namespace Yuvia.Web.Controllers
     {
         private readonly UserAccountService _userAccountService;
 
-        public AccountController( IRepository<UserAccount> userAccountRepository, IEmailPublisher emailPublisher )
+        public AccountController()
+            : base()
         {
-            _userAccountService = new UserAccountService( userAccountRepository, emailPublisher );
+            _userAccountService = new UserAccountService( new UserAccountRepository() );
+        }
+
+        public AccountController( IRepository<UserAccount> userAccountRepository, IEmailPublisher emailPublisher )
+            : base()
+        {
+            //_userAccountService = new UserAccountService( userAccountRepository, emailPublisher );
         }
 
         [HttpGet]
@@ -23,18 +34,38 @@ namespace Yuvia.Web.Controllers
         }
 
         [HttpPost]
-        public ActionResult Register( UserAccount userAccount )
+        public ActionResult Register( RegistrationViewModel registrationViewModel )
         {
-            IList<ValidationResult> validationResults = new List<ValidationResult>();
-            ValidationContext validationContext = new ValidationContext( userAccount );
+            //IList<ValidationResult> validationResults = new List<ValidationResult>();
+            //ValidationContext validationContext = new ValidationContext( registrationViewModel );
+            //var state = ModelState;
 
-            if( Validator.TryValidateObject( userAccount, validationContext, validationResults ) )
+            //if( Validator.TryValidateObject( registrationViewModel, validationContext, validationResults ) )
+            //{
+            //    //_userAccountService.RegisterAccount( userAccount );
+
+            //    //return RedirectToAction( "Dashboard" );
+            //    return RedirectToAction( "Authenticate" );
+            //}
+
+            if( ModelState.IsValid )
             {
-                _userAccountService.RegisterAccount( userAccount );
+                var userAccount = new UserAccount
+                {
+                    Username = registrationViewModel.Username,
+                    Password = registrationViewModel.Password,
+                    Email = registrationViewModel.Email
+                };
 
-                return RedirectToAction( "Dashboard" );
+                _userAccountService.RegisterAccount( userAccount );
             }
 
+            return View();
+        }
+
+        [HttpGet]
+        public ActionResult Authenticate()
+        {
             return View();
         }
     }

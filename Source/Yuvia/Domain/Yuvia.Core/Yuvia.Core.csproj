@@ -43,10 +43,10 @@
   <ItemGroup>
     <Compile Include="Account\SignIn.cs" />
     <Compile Include="Account\UserAccount.cs" />
-    <Compile Include="Email.cs" />
+    <Compile Include="Email\Email.cs" />
     <Compile Include="Entity.cs" />
-    <Compile Include="IEmailPublisher.cs" />
-    <Compile Include="IRepository.cs" />
+    <Compile Include="Email\IEmailPublisher.cs" />
+    <Compile Include="Data\IRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
