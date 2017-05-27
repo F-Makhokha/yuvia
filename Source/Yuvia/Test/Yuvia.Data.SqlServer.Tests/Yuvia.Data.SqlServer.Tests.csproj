@@ -66,10 +66,6 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Domain\Yuvia.Core\Yuvia.Core.csproj">
-      <Project>{93A6188C-94DE-4BEC-B928-226275050D37}</Project>
-      <Name>Yuvia.Core</Name>
-    </ProjectReference>
     <ProjectReference Include="..\..\Data\Yuvia.Data.SqlServer\Yuvia.Data.SqlServer.csproj">
       <Project>{13DB682E-3CD3-4743-9B05-9CF6E65C8624}</Project>
       <Name>Yuvia.Data.SqlServer</Name>

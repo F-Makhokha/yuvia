@@ -139,13 +139,19 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
-    <Content Include="Static\CSS\Default\MainLayout.css" />
+    <Content Include="Static\CSS\Shared\MainLayout.css" />
+    <Content Include="Static\CSS\Profile\Profile.css" />
+    <Content Include="Static\CSS\Shared\ProfileLayout.css" />
+    <Content Include="Static\Images\Profile\profile-pic.png" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Configuration\RouteConfig.cs" />
+    <Compile Include="Configuration\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Configuration\CustomRazorViewEngine.cs" />
+    <Compile Include="Controllers\DashboardController.cs" />
+    <Compile Include="Controllers\ProfileController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -155,12 +161,13 @@
   <ItemGroup>
     <Content Include="Views\web.config" />
     <Content Include="packages.config" />
-    <Content Include="ApplicationInsights.config">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_MainLayout.cshtml" />
     <Content Include="Views\Account\Authenticate.cshtml" />
+    <Content Include="Views\Dashboard\Index.cshtml" />
+    <Content Include="Views\Profile\Profile.cshtml" />
+    <Content Include="Views\Shared\_ProfileLayout.cshtml" />
+    <Content Include="Views\Profile\_ViewStart.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -175,14 +182,6 @@
     <ProjectReference Include="..\..\Data\Yuvia.Data.SqlServer\Yuvia.Data.SqlServer.csproj">
       <Project>{13DB682E-3CD3-4743-9B05-9CF6E65C8624}</Project>
       <Name>Yuvia.Data.SqlServer</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\Domain\Yuvia.Core\Yuvia.Core.csproj">
-      <Project>{93a6188c-94de-4bec-b928-226275050d37}</Project>
-      <Name>Yuvia.Core</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\Domain\Yuvia.Services\Yuvia.Services.csproj">
-      <Project>{72e496bf-703f-4867-b1b1-53be6a069f49}</Project>
-      <Name>Yuvia.Services</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

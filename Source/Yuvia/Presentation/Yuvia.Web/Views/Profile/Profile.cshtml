@@ -1,0 +1,42 @@
+﻿
+@{
+    ViewBag.Title = "Profile";
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/Static/CSS/Profile/Profile.css" />
+}
+
+<div id="divHeadline" class="container-fluid">
+    @*Profile Box - Use absolute positioning*@
+    <div class="container">
+        <div id="divProfileInfoBox" class="pull-left">
+            <img src="~/Static/Images/Profile/profile-pic.png" width="150" />
+            <div id="divUsername">johndoe</div>
+            <div id="divLocation">Denver, CO</div>
+            <hr />
+            <div id="divQuickStatus">
+                <div>Status: Single</div>
+                <div>Occupation: Youth Pastor</div>
+                <div>Kids: Definitely</div>                
+            </div>
+        </div>
+        <div class="pull-right">
+            Loving the Lord
+        </div>
+    </div>
+</div>
+
+<div id="divConnectButtons" class="container-fluid">
+    <div class="container">
+        <div class="pull-right">
+            <button id="btnConnect" class="btn">Connect</button>
+            <button id="btnMaybe" class="btn">Maybe...</button>
+            <button id="btnNotInterested" class="btn">Not Interested</button>
+        </div>
+    </div>
+</div>
+
+<div class="containter-fluid">
+
+</div>

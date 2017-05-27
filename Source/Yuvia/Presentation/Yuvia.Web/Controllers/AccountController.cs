@@ -1,34 +1,32 @@
-﻿using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Web.Mvc;
-using Yuvia.Core;
-using Yuvia.Core.Account;
+﻿using System.Web.Mvc;
 using Yuvia.Core.Data;
 using Yuvia.Core.Email;
 using Yuvia.Data.SqlServer.Repositories;
-using Yuvia.Services.Account;
+using Yuvia.Domain.Account.Entities;
+using Yuvia.Domain.Account.Repositories;
+using Yuvia.Domain.Account.Services;
 using Yuvia.Web.Models;
 
 namespace Yuvia.Web.Controllers
 {
     public class AccountController : Controller
     {
-        private readonly UserAccountService _userAccountService;
+        //private readonly UserAccountService _userAccountService;
 
         public AccountController()
             : base()
         {
-            _userAccountService = new UserAccountService( new UserAccountRepository() );
+            //_userAccountService = new UserAccountService( new UserAccountRepository() );
         }
 
-        public AccountController( IRepository<UserAccount> userAccountRepository, IEmailPublisher emailPublisher )
+        public AccountController( IUserAccountRepository userAccountRepository, IEmailPublisher emailPublisher )
             : base()
         {
             //_userAccountService = new UserAccountService( userAccountRepository, emailPublisher );
         }
 
         [HttpGet]
-        public ViewResult Register()
+        public ActionResult Register()
         {
             return View();
         }
@@ -48,17 +46,17 @@ namespace Yuvia.Web.Controllers
             //    return RedirectToAction( "Authenticate" );
             //}
 
-            if( ModelState.IsValid )
-            {
-                var userAccount = new UserAccount
-                {
-                    Username = registrationViewModel.Username,
-                    Password = registrationViewModel.Password,
-                    Email = registrationViewModel.Email
-                };
+            //if( ModelState.IsValid )
+            //{
+            //    var userAccount = new UserAccount
+            //    {
+            //        Username = registrationViewModel.Username,
+            //        Password = registrationViewModel.Password,
+            //        Email = registrationViewModel.Email
+            //    };
 
-                _userAccountService.RegisterAccount( userAccount );
-            }
+            //    _userAccountService.RegisterAccount( userAccount );
+            //}
 
             return View();
         }

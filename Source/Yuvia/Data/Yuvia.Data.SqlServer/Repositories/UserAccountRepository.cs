@@ -1,11 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Yuvia.Core.Data;
-using Yuvia.Core.Account;
 using Yuvia.Data.SqlServer.EntityFramework;
+using Yuvia.Domain.Account.Entities;
 
 namespace Yuvia.Data.SqlServer.Repositories
 {

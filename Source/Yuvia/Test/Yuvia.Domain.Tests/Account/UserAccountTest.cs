@@ -1,11 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xunit;
-using Yuvia.Core.Account;
+using Yuvia.Domain.Account.Entities;
 
 namespace Yuvia.Domain.Tests.Account
 {
