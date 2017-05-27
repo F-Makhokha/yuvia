@@ -1,4 +1,4 @@
-﻿namespace Yuvia.Domain.Core.Base
+﻿namespace Yuvia.Domain.Core.Domain.Base
 {
     public abstract class Entity
     {

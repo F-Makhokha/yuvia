@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
-using Yuvia.Domain.Dating.ValueObjects;
 
-namespace Yuvia.Domain.Dating.Entities
+namespace Yuvia.Domain.Core.Domain.Connection
 {
     public class Profile
     {

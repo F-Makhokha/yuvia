@@ -1,7 +1,4 @@
-﻿using Yuvia.Domain.Account.Entities;
-using Yuvia.Domain.Account.ValueObjects;
-
-namespace Yuvia.Domain.Account.Repositories
+﻿namespace Yuvia.Domain.Services.Repositories
 {
     public interface IUserAccountRepository
     {

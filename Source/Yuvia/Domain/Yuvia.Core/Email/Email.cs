@@ -1,4 +1,4 @@
-﻿namespace Yuvia.Core.Email
+﻿namespace Yuvia.Domain.Core.Email
 {
     public class Email
     {

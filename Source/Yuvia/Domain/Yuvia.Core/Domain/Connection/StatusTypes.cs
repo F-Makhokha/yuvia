@@ -1,4 +1,4 @@
-﻿namespace Yuvia.Domain.Dating.ValueObjects
+﻿namespace Yuvia.Domain.Core.Domain.Connection
 {
     public class StatusTypes
     {

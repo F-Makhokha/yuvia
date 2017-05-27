@@ -1,6 +1,4 @@
-﻿using Yuvia.Domain.Dating.Entities;
-
-namespace Yuvia.Domain.Dating.Repositories
+﻿namespace Yuvia.Domain.Services.Repositories
 {
     public interface IProfileRepository
     {

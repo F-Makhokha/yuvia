@@ -1,8 +1,6 @@
 ﻿using System.Collections.Generic;
-using Yuvia.Domain.Dating.ValueObjects;
-using ProfileConnectionService = Yuvia.Domain.Dating.UseCases.ProfileConnectionService;
 
-namespace Yuvia.Domain.Dating.Repositories
+namespace Yuvia.Domain.Services.Repositories
 {
     public interface IProfileConnectionRepository
     {

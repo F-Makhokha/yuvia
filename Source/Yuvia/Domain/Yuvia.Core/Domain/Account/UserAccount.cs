@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using Yuvia.Domain.Core.Base;
+using Yuvia.Domain.Core.Domain.Base;
 
 namespace Yuvia.Domain.Core.Domain.Account
 {

@@ -1,4 +1,4 @@
-﻿namespace Yuvia.Domain.Services.Account
+﻿namespace Yuvia.Domain.Services.Domain.Account
 {
     public class AuthenticationService
     {
