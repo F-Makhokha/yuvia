@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using Yuvia.Domain.Core.Domain.Interaction;
 
 namespace Yuvia.Domain.Services.Repositories
 {
@@ -6,7 +7,7 @@ namespace Yuvia.Domain.Services.Repositories
     {
         IList<ProfileConnection> Get( int profileId );
         ProfileConnection Get( int originProfileId, int directedProfileId );
-        void Insert( int originProfileId, int directedProfileId, Enums.ConnectionStatus status );
-        void Update( int originProfileId, int directedProfileId, Enums.ConnectionStatus status );
+        void Insert( int originProfileId, int directedProfileId, ConnectionStatus status );
+        void Update( int originProfileId, int directedProfileId, ConnectionStatus status );
     }
 }

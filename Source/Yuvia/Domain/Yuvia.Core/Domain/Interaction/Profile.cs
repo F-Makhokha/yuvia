@@ -1,24 +1,26 @@
 ﻿using System.Collections.Generic;
 
-namespace Yuvia.Domain.Core.Domain.Connection
+namespace Yuvia.Domain.Core.Domain.Interaction
 {
     public class Profile
     {
-        public int Id { get; }
+        public int Id { get; set; }
 
         public string Username { get; set; }
 
         public string Headline { get; set; }
 
-        /* Location Information */
+        /** Location Information **/
         public string City { get; set; }
         public string State { get; set; }
+        public string Country { get; set; }
+        public string Zip { get; set; }
+
         public string Occupation { get; set; }
 
-        public StatusTypes.RelationshipStatus RelationshipStatus { get; set; }
-        public StatusTypes.KidDesireStatus KidsDesireStatus { get; set; }
+        public RelationshipStatus RelationshipStatus { get; set; }
 
-        public IList<ProfileAnswer> ProfileAnswers { get; set; }
+        public IList<ProfileQuestion> ProfileAnswers { get; set; }
 
         public IList<ProfileConnection> ProfileConnections { get; }
 
@@ -27,5 +29,10 @@ namespace Yuvia.Domain.Core.Domain.Connection
         {
             ProfileConnections = new List<ProfileConnection>();
         }                     
+    }
+
+    public enum RelationshipStatus
+    {
+        Single, Divorced, Widowed
     }
 }

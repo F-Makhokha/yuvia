@@ -40,14 +40,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Domain\Account\AuthenticationService.cs" />
-    <Compile Include="Domain\Account\RegistrationService.cs" />
-    <Compile Include="Domain\Connection\ConnectionService.cs" />
-    <Compile Include="Domain\Connection\ProfileConnectionService.cs" />
+    <Compile Include="Domain\Identity\AuthenticationService.cs" />
+    <Compile Include="Domain\Identity\RegistrationService.cs" />
+    <Compile Include="Domain\Interaction\ProfileService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\IProfileConnectionRepository.cs" />
     <Compile Include="Repositories\IProfileRepository.cs" />
     <Compile Include="Repositories\IUserAccountRepository.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Yuvia.Core\Yuvia.Core.csproj">
+      <Project>{2A025814-F443-4BDD-898B-CF6FE8D12FAE}</Project>
+      <Name>Yuvia.Core</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

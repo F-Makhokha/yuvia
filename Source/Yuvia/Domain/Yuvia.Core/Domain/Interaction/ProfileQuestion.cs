@@ -1,6 +1,6 @@
-﻿namespace Yuvia.Domain.Core.Domain.Connection
+﻿namespace Yuvia.Domain.Core.Domain.Interaction
 {
-    public class ProfileAnswer
+    public class ProfileQuestion
     {
         public string Question { get; set; }
         public string Answer { get; set; }

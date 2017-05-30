@@ -31,6 +31,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -41,14 +42,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Data\IRepository.cs" />
-    <Compile Include="Domain\Account\SignIn.cs" />
-    <Compile Include="Domain\Account\UserAccount.cs" />
+    <Compile Include="Domain\Identity\SignIn.cs" />
+    <Compile Include="Domain\Identity\UserAccount.cs" />
     <Compile Include="Domain\Base\Entity.cs" />
-    <Compile Include="Domain\Connection\Enums.cs" />
-    <Compile Include="Domain\Connection\Profile.cs" />
-    <Compile Include="Domain\Connection\ProfileAnswer.cs" />
-    <Compile Include="Domain\Connection\ProfileConnection.cs" />
-    <Compile Include="Domain\Connection\StatusTypes.cs" />
+    <Compile Include="Domain\Interaction\GroupMessage.cs" />
+    <Compile Include="Domain\Interaction\Message.cs" />
+    <Compile Include="Domain\Interaction\Profile.cs" />
+    <Compile Include="Domain\Interaction\ProfileQuestion.cs" />
+    <Compile Include="Domain\Interaction\ProfileConnection.cs" />
     <Compile Include="Email\Email.cs" />
     <Compile Include="Email\IEmailPublisher.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -1,4 +1,6 @@
-﻿namespace Yuvia.Domain.Services.Repositories
+﻿using Yuvia.Domain.Core.Domain.Interaction;
+
+namespace Yuvia.Domain.Services.Repositories
 {
     public interface IProfileRepository
     {

@@ -1,6 +1,7 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
 
-namespace Yuvia.Domain.Core.Domain.Account
+namespace Yuvia.Domain.Core.Domain.Identity
 {
     public class SignIn
     {

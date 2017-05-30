@@ -1,4 +1,6 @@
-﻿namespace Yuvia.Domain.Services.Repositories
+﻿using Yuvia.Domain.Core.Domain.Identity;
+
+namespace Yuvia.Domain.Services.Repositories
 {
     public interface IUserAccountRepository
     {

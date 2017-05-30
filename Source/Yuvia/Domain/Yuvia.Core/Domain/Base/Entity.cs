@@ -1,4 +1,6 @@
-﻿namespace Yuvia.Domain.Core.Domain.Base
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace Yuvia.Domain.Core.Domain.Base
 {
     public abstract class Entity
     {

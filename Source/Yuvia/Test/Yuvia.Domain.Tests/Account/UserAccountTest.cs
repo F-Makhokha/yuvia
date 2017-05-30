@@ -1,6 +1,6 @@
 ﻿using System;
 using Xunit;
-using Yuvia.Domain.Account.Entities;
+using Yuvia.Domain.Core.Domain.Identity;
 
 namespace Yuvia.Domain.Tests.Account
 {

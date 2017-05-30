@@ -1,8 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using Yuvia.Domain.Core.Domain.Base;
 
-namespace Yuvia.Domain.Core.Domain.Account
+namespace Yuvia.Domain.Core.Domain.Identity
 {
     public class UserAccount : Entity
     {

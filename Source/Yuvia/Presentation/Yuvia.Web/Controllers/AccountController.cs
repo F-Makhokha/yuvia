@@ -1,10 +1,4 @@
 ﻿using System.Web.Mvc;
-using Yuvia.Core.Data;
-using Yuvia.Core.Email;
-using Yuvia.Data.SqlServer.Repositories;
-using Yuvia.Domain.Account.Entities;
-using Yuvia.Domain.Account.Repositories;
-using Yuvia.Domain.Account.Services;
 using Yuvia.Web.Models;
 
 namespace Yuvia.Web.Controllers
@@ -19,11 +13,11 @@ namespace Yuvia.Web.Controllers
             //_userAccountService = new UserAccountService( new UserAccountRepository() );
         }
 
-        public AccountController( IUserAccountRepository userAccountRepository, IEmailPublisher emailPublisher )
-            : base()
-        {
-            //_userAccountService = new UserAccountService( userAccountRepository, emailPublisher );
-        }
+        //public AccountController( IUserAccountRepository userAccountRepository, IEmailPublisher emailPublisher )
+        //    : base()
+        //{
+        //    //_userAccountService = new UserAccountService( userAccountRepository, emailPublisher );
+        //}
 
         [HttpGet]
         public ActionResult Register()
